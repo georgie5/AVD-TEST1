@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>StudentForm</title>
+</head>
+<body>
+    <h2>StudentForm</h2>
+
+  <div style= "text-align: center">
+    <nav style="display: flex; text-align: center; justify-content: space-between;">
+         <a href="/home">HOME</a>
+         <a href="/form">ADD STUDENT</a>
+         <a href="/student-show">VIEW STUDENTS</a>
+    </nav>
+</div>
+
+    <hr>
+    <h3>Add a Student</h3>
+
+    <form action="/student-add" id="studentform" method="POST">
+        <div>
+            <label>Name</label><br>
+            <input type="text" size="30" name="student_name"> 
+            <br>
+            <label>Email</label><br>
+            <input type="text" size="20" name="email">
+            <br>
+            <label>Class</label><br>
+            <input type="text" size="20" name="class">
+            <br>
+            <label>Major</label><br>
+            <input type="text" size="20" name="major">
+            <br>
+            <label>Age</label><br>
+            <input type="number" name="age">
+
+        </div>
+       
+        <br>
+        <div>
+            <input type="submit" values="Submit">
+        </div>
+        </form>
+        </hr>
+        <footer>
+            <p>
+                <a href="mailto:2021154499@ub.edu.bz">2021154499@ub.edu.bz</a>
+            </p>
+        </footer>
+<body>
+</html> 

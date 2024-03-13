@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Students</title>
+</head>
+<body>
+    <h2>StudentsList</h2>
+<div style= "text-align: center">
+    <nav style="display: flex; text-align: center; justify-content: space-between;">
+         <a href="/home">HOME</a>
+         <a href="/form">ADD STUDENT</a>
+         <a href="/student-show">VIEW STUDENTS</a>
+    </nav>
+</div>
+
+    <h3>student</h3>
+    {{ if . }}
+    {{ range . }}
+    <ul>
+       <li>{{ .Age}}</li>
+       <li>{{ .Major}}</li>
+       <li>{{ .Class}}</li>
+       <strong>--{{.Student_name}}</strong>
+    </ul>
+    {{end}}
+    {{else}}
+    <p>Nothing ito see here. Move along..</p>
+    {{end}}
+
+    <footer>
+        <p>
+            <a href="mailto:2021154499@ub.edu.bz">myemail</a>
+        </p>
+</body>
